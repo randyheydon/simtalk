@@ -1,0 +1,41 @@
+Engineering the Impossible
+- in the last 10-15 years, have seen eg. NASA looking to private enterprise, and SpaceX being very efficient with their engineering
+- more simulation will be accessible to non-experts, with simplified interfaces like submitting straightforward jobs
+- simulation of electric propulsion is tough, due to all the coupled physics (electromagnetics, fluids, structures, control systems)
+- high performance computing (HPC) will be important for making bigger models
+    - but I think these larger models will require tougher advances in pre- and post-processing - automation of these is important
+- will allow integration of hardware development with software development, allowing complete product simulations
+
+- Thought: improvements in rapid prototyping could actually decrease the need for good modelling
+
+Ciera
+- no more rule-of-thumb or back-of-the-envelope strategies required
+    - use the right tool (eg. power drill today, even if hand cranks were good in the past)
+- precise answers are demanded
+- ease of file import (cross-communication) and standardization (eg. JEDEC) would "help the industry"
+
+Multiphysics
+- errors today come from incomplete boundary conditions, not from too-small models (ie. we have all the computing power, but can't always use it right)
+- and a product can't be improved if model error is larger than the expected improvement
+- no one person understands all areas of physics; therefore, in the future, no one will be a total modelling expert
+
+High Performance Computing (HPC)
+- Ansys can use 4000 cores with a fully linear speed increase, and 18,000 with a speed increase of >80% of linear
+    - meshing is less well parallelized, but they're working on it
+- statistical combinations of potential changes (?)
+- progression of modelling techniques:
+    - single solutions > parametric analyses > design of experiments (DoE), response surfaces > goal driven optimization > stochastic methods, design for 6 sigma
+
+Process Automation
+- used application customization toolkit (ACT) to make custom wizards and objects for the Quebec dam authority
+- during an emergency, anyone with permission can set parameters (eg. water level) and run through a web interface to see current safety factors
+
+Speaking to Simon of the HPC talk
+- GM tried to democratize CFD, giving access to CAD people, followed by review by specialists
+    - didn't really pan out
+    - resulted in the first creation of a highly-simplified Workbench
+    - then experts started to like Workbench, and it was expanded to better suit them
+- he is working on things where you do a bunch of parametric analyses and fit a response surface to the results
+    - this lets non-technical people get quick, accurate results as they don't perform any actual analyses
+    - eg. doctor enters patient measurements, gets prosthetic size
+    - eg. oil driller enters pressure and stuff, gets when to stop drilling and start pumping
