@@ -1,0 +1,8 @@
+Simulating Everything and its Consequences
+
+- Modelling is representing something so that you can ask specific questions about the real thing
+    - an architectural model can answer questions about how a proposed building will look
+    - a fashion model answers how clothes will look on people, though their goal is not accuracy, since the models do not look much like common people, and are instead chosen to make the clothes look good
+- Simulation is taking a model and evolving it over time
+    - many cover physics
+- Simulation is in the talk title, but I'll be talking about both
