@@ -5,4 +5,21 @@ Simulating Everything and its Consequences
     - a fashion model answers how clothes will look on people, though their goal is not accuracy, since the models do not look much like common people, and are instead chosen to make the clothes look good
 - Simulation is taking a model and evolving it over time
     - many cover physics
-- Simulation is in the talk title, but I'll be talking about both
+    - like this hilarious horse simulator found on Wikipedia
+- Simulation is in the talk title, but I'll be talking about modelling too
+    - focusing on computerized simulation
+
+- I use modelling and simulation techniques extensively for engineering work
+    - FEA (knee?) and multibody dynamics (NUCARS)
+    - [show animations] so exciting! (sarcasm)
+- Many techniques are used in many areas of science
+    - [something from Ben?]
+    - [any other things?]
+    - also exciting! (more sarcasm)
+- Scientific simulations, you may note, do not appear very exciting
+    - focus on total correctness in a narrow domain
+    - eg. my railcar simulations go up to derailment, not after, since it's already failed by that point
+- But they do great things for us
+    - TODO list some things
+
+- For more dramatic simulations, move to the art world
