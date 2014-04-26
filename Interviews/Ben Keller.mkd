@@ -1,0 +1,11 @@
+First, tell me about your simulation techniques.
+    - what does it tell you that wasn't achievable with past techniques?
+    - what simplifications of reality does it entail?
+    - what are its limitations?
+    - what limitations are intrinsic to the method, and what can be solved with the progression of computing power?
+How are these techniques currently advancing your (and others') work?
+    - again, what does it tell you that wasn't achievable with past techniques?
+How will the techniques change in the future?
+    - like, what is currently being studied but not widely used?
+    - how will this affect your abilities and limitations?
+Could I get some animations?  Preferably something technically impressive (difficult model, important results), even if it doesn't look too visually impressive.  Maybe something visually impressive too, if it's available.
