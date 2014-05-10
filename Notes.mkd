@@ -23,3 +23,23 @@ Simulating Everything and its Consequences
     - TODO list some things
 
 - For more dramatic simulations, move to the art world
+
+- What does the future hold?  How far can simulations go?
+    - computational limits: eg. full detail simulation can be no smaller than the simulated
+    - we're doing larger brains; estimate of human-sized in [x] time
+    - which raises the question: how detailed must a simulated human be before we have to give it rights?
+        - Turing test is the classic test for intelligence
+        - it's even possible that we're simulated
+        - if simulated people are as real as us, don't they deserve rights?
+        - but you can "simulate" (imagine) a person in all sorts of terrible situations; are you a monster as a result?
+        - what about when you take your characters in The Sims and burn them alive?
+        - if not, what simulation fidelity is needed before torturing the simulation is wrong?
+
+- But I'm not here to get all philosophical; how will simulation affect our lives in the future?
+    - it will continue the ways it already does, of course, but even more because of more computing power
+        - could result in more tailored products (eg. medical); sim techniques to optimize per person
+    - will become more democratized with more people simulating, but that has its limits too
+        - as more detail can be simulated, fewer judgement calls will be needed
+    - better simulations means better video games
+        - and that may include wider applications of VR beyond just games (though I'm sure you've heard that before)
+    - and if we can simulate whole brains, maybe that means digital copies of ourselves
