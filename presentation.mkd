@@ -1,0 +1,65 @@
+# Simulating Everything and its Consequences
+
+Randy Heydon, P.Eng.
+
+<div class="notes">
+I want to show you the things that are happening because of computer modelling and simulation, the effect it has on your lives, and where it might go in the future.  I'm a mechanical engineer working at National Steel Car.  I design freight train cars.  Even in such an old industry, modelling and simulation are major parts of the job and continue to drive the industry forward.  And in other industries, they're even bigger business.
+</div>
+
+---
+
+# Model
+
+Represents a thing such that you can ask specific questions about that thing
+
+<div class="notes">
+Just so we all agree what we're talking about: modelling is as stated here.  It's a very general term, and isn't specific to computers.  An architectural model answers questions about how a proposed building will look.  A fashion model answers questions about how clothing will look on people (although it's not in their interest to answer that *accurately*).
+</div>
+
+---
+
+# Simulation
+
+A model that evolves over time.
+
+<div class="notes">
+Simulation is taking a model and evolving it over time.  Simple as that.  Frankly, I don't consider that too distinct from modelling, so I'm going to consider both today.  Many interesting models cover phenomena in physics.  For example...
+</div>
+
+---
+
+![TODO license, reference](content/Horse_simulator_WWI.jpg)
+
+[@horse_sim]
+
+<div class="notes">
+...this hilarious horse simulator I saw on Wikipedia.  Its motions evolve with time, thereby telling you what it's like to ride a horse.  Ostensibly.
+</div>
+
+---
+
+![TODO some cool simulation image](content/what)
+
+<div class="notes">
+But today I'll be focusing on computer modelling and simulation.  The underlying techniques -- mathematical modelling and numerical approximation -- are not new, but modern computing power has made them far more powerful.
+</div>
+
+---
+
+. . .
+
+<video controls src="content/something"/>
+
+<div class="notes">
+In my work as an engineer, I model and simulate extensively.  I do a fair bit of multibody dynamics; I take bodies as rigid masses, make connections between them, and see how they all move.  Here is the output from NUCARS, rail-specific multibody dynamics software, for a [TODO description of video].  Let's see how it goes.
+
+So exciting!  No?  How about this:
+</div>
+
+---
+
+<video controls src="content/kneething"/>
+
+<div class="notes">
+Here is a finite element analysis of a knee joint from the Open Knee project that I worked on for my Master's thesis.  The finite element method is used for a number of things, but I use it (both here and in my current work) for finding stresses and deformations of solids under load. [TODO more description]
+</div>

@@ -20,12 +20,16 @@ presentation: $(INPUT)
 	          -V revealjs-url=content/reveal.js\
 	          --smart\
 	          --standalone\
+	          --bibliography=content/sources.bib\
+	          --csl=content/ieee.csl\
 	          -o $(PRESENTATION) $(INPUT)
 
 webpage: $(INPUT)
 	$(PANDOC) -t html\
 	          --smart\
 	          --standalone\
+	          --bibliography=content/sources.bib\
+	          --csl=content/ieee.csl\
 	          -o $(WEBPAGE) $(INPUT)
 
 clean:
