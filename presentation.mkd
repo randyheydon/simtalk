@@ -48,7 +48,7 @@ But today I'll be focusing on computer modelling and simulation.  The underlying
 
 . . .
 
-<video controls src="content/something"/>
+<!--video controls src="content/something"/-->
 
 <div class="notes">
 In my work as an engineer, I model and simulate extensively.  I do a fair bit of multibody dynamics; I take bodies as rigid masses, make connections between them, and see how they all move.  Here is the output from NUCARS, rail-specific multibody dynamics software, for a [TODO description of video].  Let's see how it goes.
@@ -58,8 +58,30 @@ So exciting!  No?  How about this:
 
 ---
 
-<video controls src="content/kneething"/>
+<!--video controls src="content/kneething"/-->
 
 <div class="notes">
 Here is a finite element analysis of a knee joint from the Open Knee project that I worked on for my Master's thesis.  The finite element method is used for a number of things, but I use it (both here and in my current work) for finding stresses and deformations of solids under load. [TODO more description]
+</div>
+
+---
+
+<div class="notes">
+This is so cool we should watch more simulations!  [TODO more simulations]  So cool!
+</div>
+
+---
+
+<div class="notes">
+Okay, so maybe you don't think they're all that cool.  They're not very dramatic and, as you might have noticed, there isn't a whole lot of effort put into cool graphics.  Because all these simulations are focused on science.  For these, it's important that the simulations are very accurate, but only in a very narrow domain.
+
+For example, those railcar simulations of mine only work as long as the train is on the tracks.  If the simulation ever gets cool enough that the train flies of the tracks?  In real life it would look cool, but that's the point where my simulation stops being at all useful.  Instead, the car just... floats off.  [TODO can I get a derailed or otherwise failed simulation?]  Because if you care about the car's performance, derailment is a total failure, and anything happening after doesn't change that fact.  So I don't bother simulating it right.
+
+Now, you've probably figured out that the real purpose of these simulations is not to produce cool videos. [TODO more]
+</div>
+
+---
+
+<div class="notes">
+But if you want to see some prettier pictures, we can instead take a look in the art world.
 </div>
