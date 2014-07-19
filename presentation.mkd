@@ -48,12 +48,16 @@ But today I'll be focusing on computer modelling and simulation.  The underlying
 
 . . .
 
-<!--video controls src="content/something"/-->
+<video controls src="content/Dynamic_Curving.avi"/>
+
+[@Dynamic_Curving]
 
 <div class="notes">
-In my work as an engineer, I model and simulate extensively.  I do a fair bit of multibody dynamics; I take bodies as rigid masses, make connections between them, and see how they all move.  Here is the output from NUCARS, rail-specific multibody dynamics software, for a [TODO description of video].  Let's see how it goes.
+In my work as an engineer, I model and simulate extensively.  I do a fair bit of multibody dynamics; I take bodies as rigid masses, make connections between them, and see how they all move.  Here is the output from NUCARS, rail-specific multibody dynamics software, for a railcar being tested in what is known as Dynamic Curving, a standard test for suspension performance.  It's crazy, you go around a curve, and the rails start going up and down, and one of the rails goes in and out, and there's just a lot of stuff going on.  Let's watch it:
 
-So exciting!  No?  How about this:
+This box is the car body, and we've got the suspension and wheels down here, then the rails along the bottom.  We get into the curve, and... wow!  Look at it go!
+
+So exciting!  Don't you love it?  No, you don't?  Okay, how about this:
 </div>
 
 ---
@@ -85,3 +89,39 @@ Now, you've probably figured out that the real purpose of these simulations is n
 <div class="notes">
 But if you want to see some prettier pictures, we can instead take a look in the art world.
 </div>
+
+---
+
+[TODO video games]
+
+---
+
+[TODO film and static]
+
+---
+
+[TODO neat things for the future of artsim; siggraph?]
+
+---
+
+[TODO neat things for the future of engsim]
+
+---
+
+[TODO sim limits]
+
+---
+
+[TODO brain sim]
+
+---
+
+[TODO sim intelligences and rights]
+
+---
+
+[TODO could we be sims?]
+
+---
+
+[TODO general effects on future lives]
