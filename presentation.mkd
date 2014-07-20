@@ -48,7 +48,7 @@ But today I'll be focusing on computer modelling and simulation.  The underlying
 
 . . .
 
-<video controls src="content/Dynamic_Curving.avi"/>
+<video controls src="content/Dynamic_Curving.webm"/>
 
 [@Dynamic_Curving]
 
