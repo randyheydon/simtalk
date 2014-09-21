@@ -100,19 +100,30 @@ The obvious artistic application of simulation is in video games.  Tons of games
 
 ---
 
-[TODO clip of something from a video game in slow motion detail; let's pretend it's an explosion in Goat Simulator]
-[TODO do my own goat-head-on-tank simulation?]
+<video controls src="content/goat.webm"/>
 
 <div class="notes">
-The goat headbutts the gas tank, the gas tank explodes, and the goat is sent flying.  Makes sense, right?  So if we wanted to simulate this accurately, we would probably have the goat's head as a rigid body; it makes contact with the tank, causing deformation and gradually losing momentum; the tank would start stretching and deforming; the internal pressure of the tank's gas would force against the deformed metal, eventually breaking through; the gas would escape; and we'd probably stop there cause that's when it gets complicated, and we already know the tank has broken.  Now, how does the game simulate it?  Well, the box around the headbutt intersects with the box around the tank, an explosion happens in a sphere around the contact, and the goat is given a high speed away from it.  That was a lot easier.  But with this method, we don't know the actual shape of the explosion, and we don't know if it would actually ignite, and we don't know if there would be any safe areas around the tank, and we don't know how fast the goat would be flung....  But it sure is fun this way.
+The goat headbutts the gas tank, the gas tank explodes, and the goat is sent flying.  Then bounces off a tree.  Makes sense, right?  Now how would we simulate this accurately?
 </div>
 
 ---
 
+[TODO some comparable simulation]
+
+<div class="notes">
+We would probably have the goat's head as a rigid body; it makes contact with the tank, causing deformation and gradually losing momentum; the tank would start stretching and deforming; the internal pressure of the tank's gas would force against the deformed metal, eventually breaking through; the gas would escape; and we'd probably stop there cause that's when it gets complicated, and we already know the tank has broken.  Now, how does the game simulate it?  Well, the box around the headbutt intersects with the box around the tank, an explosion happens in a sphere around the contact, and the goat is given a high speed away from it.  That was a lot easier.  But with this method, we don't know the actual shape of the explosion, and we don't know if it would actually ignite, and we don't know if there would be any safe areas around the tank, and we don't know how fast the goat would be flung....  But it sure is fun this way.  And what makes it fun is that it all happens in real-time, where we can react to it and play with it, instead of waiting overnight for all the specifics to be calculated.
+
+And that's the key factor that distinguishes video game simulation from scientific: the video game simulation *must* be performed fast enough for the player to live in it, and to hell with accuracy.  They can, and sometimes do, use the same techniques, but the video game has to be much faster.
+</div>
+
+---
+
+...
+
 [TODO film and static]
 
 <div class="notes">
-Simulation is also useful in non-interactive media.  Film, and even static images can be produced more quickly and attractively
+Simulation is also useful in non-interactive media.  Film, and even static images can be produced more quickly and attractively with simulations filling in the details.  In these cases, speed is obviously not as critical as in video games, and neither is the accuracy of science.  The most important part of these simulations is that it looks good.
 </div>
 
 ---
