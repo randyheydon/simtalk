@@ -92,11 +92,28 @@ But if you want to see some prettier pictures, we can instead take a look in the
 
 ---
 
-[TODO video games]
+[TODO video games physics clips: ragdolls, explosions...]
+
+<div class="notes">
+The obvious artistic application of simulation is in video games.  Tons of games incorporate some form of physics simulation.  You'll notice an important difference between these and the earlier scientific simulations: these must operate fast enough to respond to user input.  To accomplish this, they crank down the accuracy, using algorithms that are fast while representing reality only well enough to fool the player.  Take this clip from Goat Simulator, for example:
+</div>
+
+---
+
+[TODO clip of something from a video game in slow motion detail; let's pretend it's an explosion in Goat Simulator]
+[TODO do my own goat-head-on-tank simulation?]
+
+<div class="notes">
+The goat headbutts the gas tank, the gas tank explodes, and the goat is sent flying.  Makes sense, right?  So if we wanted to simulate this accurately, we would probably have the goat's head as a rigid body; it makes contact with the tank, causing deformation and gradually losing momentum; the tank would start stretching and deforming; the internal pressure of the tank's gas would force against the deformed metal, eventually breaking through; the gas would escape; and we'd probably stop there cause that's when it gets complicated, and we already know the tank has broken.  Now, how does the game simulate it?  Well, the box around the headbutt intersects with the box around the tank, an explosion happens in a sphere around the contact, and the goat is given a high speed away from it.  That was a lot easier.  But with this method, we don't know the actual shape of the explosion, and we don't know if it would actually ignite, and we don't know if there would be any safe areas around the tank, and we don't know how fast the goat would be flung....  But it sure is fun this way.
+</div>
 
 ---
 
 [TODO film and static]
+
+<div class="notes">
+Simulation is also useful in non-interactive media.  Film, and even static images can be produced more quickly and attractively
+</div>
 
 ---
 
