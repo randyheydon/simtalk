@@ -30,8 +30,6 @@ Simulation is taking a model and evolving it over time.  Simple as that.  Frankl
 
 ![TODO license, reference](content/Horse_simulator_WWI.jpg)
 
-[@horse_sim]
-
 <div class="notes">
 ...this hilarious horse simulator I saw on Wikipedia.  Its motions evolve with time, thereby telling you what it's like to ride a horse.  Ostensibly.
 </div>
@@ -48,9 +46,7 @@ But today I'll be focusing on computer modelling and simulation.  The underlying
 
 . . .
 
-<video controls src="content/Dynamic_Curving.webm"/>
-
-[@Dynamic_Curving]
+<video controls><source  src="content/Dynamic_Curving.webm"></video>
 
 <div class="notes">
 In my work as an engineer, I model and simulate extensively.  I do a fair bit of multibody dynamics; I take bodies as rigid masses, make connections between them, and see how they all move.  Here is the output from NUCARS, rail-specific multibody dynamics software, for a railcar being tested in what is known as Dynamic Curving, a standard test for suspension performance.  It's crazy, you go around a curve, and the rails start going up and down, and one of the rails goes in and out, and there's just a lot of stuff going on.  Let's watch it:
@@ -62,7 +58,7 @@ So exciting!  Don't you love it?  No, you don't?  Okay, how about this:
 
 ---
 
-<!--video controls src="content/kneething"/-->
+<video controls><source src="content/openknee.webm"></video>
 
 <div class="notes">
 Here is a finite element analysis of a knee joint from the Open Knee project that I worked on for my Master's thesis.  The finite element method is used for a number of things, but I use it (both here and in my current work) for finding stresses and deformations of solids under load. [TODO more description]
@@ -79,9 +75,9 @@ This is so cool we should watch more simulations!  [TODO more simulations]  So c
 <div class="notes">
 Okay, so maybe you don't think they're all that cool.  They're not very dramatic and, as you might have noticed, there isn't a whole lot of effort put into cool graphics.  Because all these simulations are focused on science.  For these, it's important that the simulations are very accurate, but only in a very narrow domain.
 
-For example, those railcar simulations of mine only work as long as the train is on the tracks.  If the simulation ever gets cool enough that the train flies of the tracks?  In real life it would look cool, but that's the point where my simulation stops being at all useful.  Instead, the car just... floats off.  [TODO can I get a derailed or otherwise failed simulation?]  Because if you care about the car's performance, derailment is a total failure, and anything happening after doesn't change that fact.  So I don't bother simulating it right.
+For example, those railcar simulations of mine only work as long as the train is on the tracks.  If the simulation ever gets cool enough that the train flies of the tracks?  In real life it would look cool, but that's the point where my simulation stops being at all useful.  Instead, the car just... falls into nothingness.  [TODO can I get a derailed or otherwise failed simulation?]  Because if you care about the car's performance, derailment is a total failure, and anything happening after doesn't change that fact.  So I don't bother simulating it right.
 
-Now, you've probably figured out that the real purpose of these simulations is not to produce cool videos. [TODO more]
+Now, you've probably figured out that the real purpose of these simulations is not to produce cool videos.  They're focused on *making accurate predictions*, and the animations exist only as a means of *understanding the results*. [TODO more]
 </div>
 
 ---
@@ -100,7 +96,7 @@ The obvious artistic application of simulation is in video games.  Tons of games
 
 ---
 
-<video controls src="content/goat.webm"/>
+<video controls><source src="content/goat.webm"></video>
 
 <div class="notes">
 The goat headbutts the gas tank, the gas tank explodes, and the goat is sent flying.  Then bounces off a tree.  Makes sense, right?  Now how would we simulate this accurately?
@@ -123,7 +119,7 @@ And that's the key factor that distinguishes video game simulation from scientif
 [TODO film and static]
 
 <div class="notes">
-Simulation is also useful in non-interactive media.  Film, and even static images can be produced more quickly and attractively with simulations filling in the details.  In these cases, speed is obviously not as critical as in video games, and neither is the accuracy of science.  The most important part of these simulations is that it looks good.
+Simulation is also useful in non-interactive media.  Film, and even static images can be produced more quickly and attractively with simulations filling in the details.  In these cases, speed is obviously not as critical as in video games -- your simulations can take as long as they want, as long as they result in a movie at the end -- and neither is the accuracy of science.  The most important part of these simulations is that it looks good.
 </div>
 
 ---
