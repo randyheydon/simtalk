@@ -74,8 +74,14 @@ This is so cool we should watch more simulations!  [TODO more simulations]  So c
 
 <div class="notes">
 Okay, so maybe you don't think they're all that cool.  They're not very dramatic and, as you might have noticed, there isn't a whole lot of effort put into cool graphics.  Because all these simulations are focused on science.  For these, it's important that the simulations are very accurate, but only in a very narrow domain.
+</div>
 
-For example, those railcar simulations of mine only work as long as the train is on the tracks.  If the simulation ever gets cool enough that the train flies of the tracks?  In real life it would look cool, but that's the point where my simulation stops being at all useful.  Instead, the car just... falls into nothingness.  [TODO can I get a derailed or otherwise failed simulation?]  Because if you care about the car's performance, derailment is a total failure, and anything happening after doesn't change that fact.  So I don't bother simulating it right.
+---
+
+<video controls><source src="content/derail.webm"></video>
+
+<div class="notes">
+For example, those railcar simulations of mine only work as long as the train is on the tracks.  If the simulation ever gets cool enough that the train flies off the tracks?  In real life it would look cool, but that's the point where my simulation stops being at all useful.  So we see the car shake violently, the wheels lift of!  And it stops.  Because if you care about the car's performance, derailment is a total failure, and anything happening after doesn't change that fact.  So I don't bother simulating it.
 
 Now, you've probably figured out that the real purpose of these simulations is not to produce cool videos.  They're focused on *making accurate predictions*, and the animations exist only as a means of *understanding the results*. [TODO more]
 </div>
@@ -113,8 +119,6 @@ And that's the key factor that distinguishes video game simulation from scientif
 </div>
 
 ---
-
-...
 
 [TODO film and static]
 
