@@ -28,7 +28,7 @@ Simulation is taking a model and evolving it over time.  Simple as that.  Frankl
 
 ---
 
-![TODO license, reference](content/Horse_simulator_WWI.jpg)
+![](content/Horse_simulator_WWI.jpg)
 
 <div class="notes">
 ...this hilarious horse simulator I saw on Wikipedia.  Its motions evolve with time, thereby telling you what it's like to ride a horse.  Ostensibly.
@@ -44,12 +44,10 @@ But today I'll be focusing on computer modelling and simulation.  The underlying
 
 ---
 
-. . .
-
 <video controls><source  src="content/Dynamic_Curving.webm"></video>
 
 <div class="notes">
-In my work as an engineer, I model and simulate extensively.  I do a fair bit of multibody dynamics; I take bodies as rigid masses, make connections between them, and see how they all move.  Here is the output from NUCARS, rail-specific multibody dynamics software, for a railcar being tested in what is known as Dynamic Curving, a standard test for suspension performance.  It's crazy, you go around a curve, and the rails start going up and down, and one of the rails goes in and out, and there's just a lot of stuff going on.  Let's watch it:
+In my work as an engineer, I model and simulate extensively.  I do a fair bit of multibody dynamics; I take bodies as rigid masses, make connections between them, and see how they all move.  Here is the output from NUCARS, rail-specific multibody dynamics software, for a railcar being tested in what is known as Dynamic Curving, a standard test for suspension performance.  It's a crazy test, you go around a curve, and the rails start going up and down, and one of the rails goes in and out, and there's just a lot of stuff going on.  Let's watch it:
 
 This box is the car body, and we've got the suspension and wheels down here, then the rails along the bottom.  We get into the curve, and... wow!  Look at it go!
 
@@ -105,15 +103,17 @@ The obvious artistic application of simulation is in video games.  Tons of games
 <video controls><source src="content/goat.webm"></video>
 
 <div class="notes">
-The goat headbutts the gas tank, the gas tank explodes, and the goat is sent flying.  Then bounces off a tree.  Makes sense, right?  Now how would we simulate this accurately?
+The goat headbutts the gas tank, the gas tank explodes, and the goat is sent flying.  Then bounces off a tree.  Makes sense, right?  But if we wanted to do a more accurate simulation, it would look more like this:
 </div>
 
 ---
 
-[TODO some comparable simulation]
+![](content/pressure_vessel.png)
 
 <div class="notes">
-We would probably have the goat's head as a rigid body; it makes contact with the tank, causing deformation and gradually losing momentum; the tank would start stretching and deforming; the internal pressure of the tank's gas would force against the deformed metal, eventually breaking through; the gas would escape; and we'd probably stop there cause that's when it gets complicated, and we already know the tank has broken.  Now, how does the game simulate it?  Well, the box around the headbutt intersects with the box around the tank, an explosion happens in a sphere around the contact, and the goat is given a high speed away from it.  That was a lot easier.  But with this method, we don't know the actual shape of the explosion, and we don't know if it would actually ignite, and we don't know if there would be any safe areas around the tank, and we don't know how fast the goat would be flung....  But it sure is fun this way.  And what makes it fun is that it all happens in real-time, where we can react to it and play with it, instead of waiting overnight for all the specifics to be calculated.
+We apply some pressure to the inside of the tank, and some forces to the outside, and the whole thing deforms until we satisfy whatever regulations we need to.  We can see it deform and we can see the stress in it, but we don't see it explode, because that's well beyond our area of interest and would require adding a whole lot of extra features to the simulation, making it run even slower.
+
+Now, how does the game simulate it?  Well, the box around the headbutt intersects with the box around the tank, an explosion happens in a sphere around the contact, and the goat is given a high speed away from it.  That was a lot easier.  But with this method, we don't know whether the goat would actually break the tank, we don't know the actual shape of the explosion, we don't know if it would actually ignite, and we don't know if there would be any safe areas around the tank, and we don't know how fast the goat would be flung....  But it sure is fun this way.  And what makes it fun is that it all happens in real-time, where we can react to it and play with it, instead of waiting overnight for all the specifics to be calculated.
 
 And that's the key factor that distinguishes video game simulation from scientific: the video game simulation *must* be performed fast enough for the player to live in it, and to hell with accuracy.  They can, and sometimes do, use the same techniques, but the video game has to be much faster.
 </div>
