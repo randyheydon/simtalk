@@ -36,8 +36,6 @@ Simulation is taking a model and evolving it over time.  Simple as that.  Frankl
 
 ---
 
-![TODO some cool simulation image](content/what)
-
 <div class="notes">
 But today I'll be focusing on computer modelling and simulation.  The underlying techniques -- mathematical modelling and numerical approximation -- are not new, but modern computing power has made them far more powerful.
 </div>
@@ -120,10 +118,24 @@ And that's the key factor that distinguishes video game simulation from scientif
 
 ---
 
-[TODO film and static]
-
 <div class="notes">
 Simulation is also useful in non-interactive media.  Film, and even static images can be produced more quickly and attractively with simulations filling in the details.  In these cases, speed is obviously not as critical as in video games -- your simulations can take as long as they want, as long as they result in a movie at the end -- and neither is the accuracy of science.  The most important part of these simulations is that it looks good.
+</div>
+
+---
+
+<video controls><source src="content/Sintel-fire.webm"></video>
+
+<div class="notes">
+Sintel is a short, computer-animated film that took advantage of fire and smoke simulations, like in these few seconds around a cooking fire...
+</div>
+
+---
+
+<video controls><source src="content/Sintel-dragon.webm"></video>
+
+<div class="notes">
+or with this fire-breathing dragon.
 </div>
 
 ---
