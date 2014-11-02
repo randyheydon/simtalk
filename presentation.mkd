@@ -23,7 +23,9 @@ Just so we all agree what we're talking about: modelling is as stated here.  It'
 A model that evolves over time.
 
 <div class="notes">
-Simulation is taking a model and evolving it over time.  Simple as that.  Frankly, I don't consider that too distinct from modelling, so I'm going to consider both today.  Many interesting models cover phenomena in physics.  For example...
+Simulation is taking a model and evolving it over time.  Simple as that.  Frankly, I don't consider that too distinct from modelling, so I'm going to consider both today.
+
+Many interesting models cover phenomena in physics.  For example...
 </div>
 
 ---
@@ -31,7 +33,7 @@ Simulation is taking a model and evolving it over time.  Simple as that.  Frankl
 ![](content/Horse_simulator_WWI.jpg)
 
 <div class="notes">
-...this hilarious horse simulator I saw on Wikipedia.  Its motions evolve with time, thereby telling you what it's like to ride a horse.  Ostensibly.
+...this hilarious horse simulator I saw on Wikipedia.  Its motions evolve with time, thereby telling you what it's like to ride a horse.  Ostensibly.  It's probably an imperfect simulation, but it's been said that "all models are wrong, but some are useful" (statistician George E. P. Box).
 </div>
 
 ---
@@ -61,6 +63,9 @@ Here is a finite element analysis of a knee joint from the Open Knee project tha
 </div>
 
 ---
+
+[TODO non-physics sim?]
+[TODO optimization]
 
 <div class="notes">
 This is so cool we should watch more simulations!  [TODO more simulations]  So cool!
@@ -142,13 +147,37 @@ or with this fire-breathing dragon.
 
 [TODO neat things for the future of artsim; siggraph?]
 
+<div class="notes">
+So that's what's happening *right now*.  Computer simulations are helping us look into the workings of the universe and ourselves, helping us build generation after generation of new products, helping us make films faster, and opening up new areas of interactive art.  But let's spend some time speculating: where will it go next?
+
+In the world of artistic simulation, a good place to look is SIGGRAPH.  This is an annual conference on computer graphics, where researchers discuss new techniques for making computer graphics faster and more attractive.  TODO look through proceedings
+</div>
+
 ---
 
 [TODO neat things for the future of engsim]
+<div class="notes">
+TODO democratization, particularly with reduced-order models (response surfaces)
+TODO more multiphysics, fewer people who understand the full model
+TODO new methods like atom-level
+TODO more high-performance stuff?
+</div>
+
+---
+
+<div class="notes">
+One thing I hope to see will be an intersection between art and engineering simulation.  For example, kinetic sculptures pushed to their limits of speed and strength with engineering simulation and optimization techniques used to bring them there.  Or maybe that's just something I want to work on.
+
+Also, simulations can produce a lot of data and important insights, but those insights are usually only comprehensible to the very technical people who made them.  Art is a great way to communicate complex ideas intuitively; maybe we'll see art that attempts to communicate the results of important simulations.
+</div>
 
 ---
 
 [TODO sim limits]
+
+<div class="notes">
+But how far can we improve?  Where does it stop?  TODO
+</div>
 
 ---
 
