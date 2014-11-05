@@ -66,6 +66,7 @@ Here is a finite element analysis of a knee joint from the Open Knee project tha
 
 [TODO non-physics sim?]
 [TODO optimization]
+[TODO benefits to development]
 
 <div class="notes">
 This is so cool we should watch more simulations!  [TODO more simulations]  So cool!
@@ -132,7 +133,7 @@ Simulation is also useful in non-interactive media.  Film, and even static image
 <video controls><source src="content/Sintel-fire.webm"></video>
 
 <div class="notes">
-Sintel is a short, computer-animated film that took advantage of fire and smoke simulations, like in these few seconds around a cooking fire...
+Sintel is a short computer-animated film that simulated, say, the fire and smoke around the pot, or the way hair and fabric falls.
 </div>
 
 ---
@@ -140,7 +141,7 @@ Sintel is a short, computer-animated film that took advantage of fire and smoke 
 <video controls><source src="content/Sintel-dragon.webm"></video>
 
 <div class="notes">
-or with this fire-breathing dragon.
+or the fire breath of this dragon.
 </div>
 
 ---
@@ -161,6 +162,7 @@ TODO democratization, particularly with reduced-order models (response surfaces)
 TODO more multiphysics, fewer people who understand the full model
 TODO new methods like atom-level
 TODO more high-performance stuff?
+TODO massive amounts of output data creating challenges in understanding (goes with big data stuff)
 </div>
 
 ---
@@ -169,6 +171,24 @@ TODO more high-performance stuff?
 One thing I hope to see will be an intersection between art and engineering simulation.  For example, kinetic sculptures pushed to their limits of speed and strength with engineering simulation and optimization techniques used to bring them there.  Or maybe that's just something I want to work on.
 
 Also, simulations can produce a lot of data and important insights, but those insights are usually only comprehensible to the very technical people who made them.  Art is a great way to communicate complex ideas intuitively; maybe we'll see art that attempts to communicate the results of important simulations.
+</div>
+
+---
+
+<video controls><source src="content/glider.webm"></video>
+
+<div class="notes">
+Another intersection, starting to happen now, is in historical preservation.  These gliders were built for the D-Day invasion in WWII.  They were designed to be cheap and disposable, landing in unprepared fields behind enemy lines and abandoned so its crew could capture bridges and stuff.  Only about 20 of these still exist.
+
+But some people reconstructed one digitally, combining the old construction drawings with 3D scans of one of the few remaining gliders.  And then, here's the simulation part, they used their model to simulate the dangerous landings that their pilots had to do.  Think about that: they took something experienced by maybe a few hundred people over 70 years ago, and made it possible for us, and everyone after us, to experience the same thing.
+TODO historical preservation: http://www.deskeng.com/virtual_desktop/?p=8835, http://www.playthepast.org/?p=4938
+</div>
+
+
+---
+
+<div class="notes">
+
 </div>
 
 ---
