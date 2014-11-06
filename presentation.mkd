@@ -181,14 +181,16 @@ Also, simulations can produce a lot of data and important insights, but those in
 Another intersection, starting to happen now, is in historical preservation.  These gliders were built for the D-Day invasion in WWII.  They were designed to be cheap and disposable, landing in unprepared fields behind enemy lines and abandoned so its crew could capture bridges and stuff.  Only about 20 of these still exist.
 
 But some people reconstructed one digitally, combining the old construction drawings with 3D scans of one of the few remaining gliders.  And then, here's the simulation part, they used their model to simulate the dangerous landings that their pilots had to do.  Think about that: they took something experienced by maybe a few hundred people over 70 years ago, and made it possible for us, and everyone after us, to experience the same thing.
-TODO historical preservation: http://www.deskeng.com/virtual_desktop/?p=8835, http://www.playthepast.org/?p=4938
 </div>
 
 
 ---
 
-<div class="notes">
+<video controls><source src="content/gran_turismo.webm"></video>
 
+<div class="notes">
+Closer to the present, consider our cars.  As models age, they get harder to find.  Even some current models will never be available to the likes of us.  And in the future, gasoline engines may disappear entirely.  But games like Gran Turismo are already preserving those experiences, even if that's not their main goal.  The future will always be able to access those experiences through simulation, whether those experiences involve the super-high-end cars shown here, or the Ford Focus that someone's grandparents had.  As long as these games stay playable, these experiences can be had.
+(see http://www.playthepast.org/?p=4938)
 </div>
 
 ---
