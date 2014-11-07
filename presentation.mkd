@@ -146,12 +146,34 @@ or the fire breath of this dragon.
 
 ---
 
-[TODO neat things for the future of artsim; siggraph?]
-
 <div class="notes">
 So that's what's happening *right now*.  Computer simulations are helping us look into the workings of the universe and ourselves, helping us build generation after generation of new products, helping us make films faster, and opening up new areas of interactive art.  But let's spend some time speculating: where will it go next?
 
-In the world of artistic simulation, a good place to look is SIGGRAPH.  This is an annual conference on computer graphics, where researchers discuss new techniques for making computer graphics faster and more attractive.  TODO look through proceedings
+In the world of artistic simulation, a good place to look is SIGGRAPH.  This is an annual conference on computer graphics, where researchers discuss new techniques for making computer graphics faster and more attractive.  It's not strictly about art or simulation, but a lot of it appears.
+</div>
+
+---
+
+![](content/hair.png)
+
+<div class="notes">
+Like this work.  These researchers developed a method to read in a hairstyle, like from photographs, and work out the underlying parameters to allow its motion to be simulated believably.  So you could have an actor converted to a model for a particular scene and have hair that still behaves properly.  Admittedly, this image isn't too artistic, but it was made by researchers, not artists themselves.
+</div>
+
+---
+
+<video controls><source src="content/splashing.webm"></video>
+
+<div class="notes">
+More entertaining are water simulations, like these large-scale splashing liquids (really, that's the title of the paper).
+</div>
+
+---
+
+<video controls><source src="content/surface_tension.webm"></video>
+
+<div class="notes">
+And these small-scale surface tension simulations.
 </div>
 
 ---
