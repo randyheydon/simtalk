@@ -225,16 +225,36 @@ But how far can we improve?  Where does it stop?  TODO
 
 ---
 
-[TODO brain sim]
+<video controls><source src="content/openworm.webm"></video>
+
+<div class="notes">
+An important project in brain modelling is the OpenWorm.  This includes a complete simulation of a nematode worm, a tiny, simple, and very well-studied animal.  It has under 1000 cells, including just 302 neurons.  So OpenWorm is creating a complete cell-level model of this worm, allowing for complete simulation of the worm and how it interacts with its environment.  It's still in development, but once complete could act as the base for simulations of larger animals, progressing eventually to humans.
+(see http://www.openworm.org)
+</div>
 
 ---
 
-[TODO sim intelligences and rights]
+<video controls><source src="content/spaun.webm"></video>
+
+<div class="notes">
+There is already some work on simulated human brains.  Spaun, from the University of Waterloo, has 2.5 million neurons and is attached to simple visual input and a single simulated arm that it can control.  It's still a far, far cry from the 85 billion neurons in a full human brain (34,000 times larger!), but it can already perform some simple human-like tasks, and shows human-like limitations, like how many numbers it can memorize at once.
+
+But the gap to full human brain simulation is very large.  I don't know when it will be possible, but I have no doubt that it will be.  If our brain simulation capacity matches Moore's law, it could be just 30 years off, before 2050.  I'm not convinced it'll actually be that quick, but the point is that it's not impossibly far either.
+</div>
 
 ---
 
-[TODO could we be sims?]
+<div class="notes">
+And now we're getting into the idea of a fully simulated human mind, one that can think and feel, indistinguishable from how we do.  And if we can eventually simulate one human, then maybe we could one day we could simulate more -- even, say, a whole planet-full of them.  And then we have to ask: is that happening to us right now?  It's been argued that, assuming we will be capable of such simulations, and assuming we have interest in performing them, there will actually be more simulated people than real ones, meaning we have a better than even chance of all being in a simulation right now.
+(see http://www.simulation-argument.com/simulation.html)
+
+Being humans, all of us deserve human rights (like not being unexpectedly killed), and we could be simulations, so don't human simulations also deserve human rights (like not being unexpectedly shut off)?  And if they do, then simulated minds similar to humans must have rights too.  Then at what level of simulation complexity is required for personhood?  If you play The Sims and burn them alive, you don't get arrested for murder.  If you imagine a person in horrible pain, that's a simulation running in your head, but it's not considered torture.  But if you have a fully accurate human brain simulation and subject it to pain, how is that different from doing the same to real human?
+</div>
 
 ---
 
 [TODO general effects on future lives]
+
+<div class="notes">
+
+</div>
