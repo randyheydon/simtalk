@@ -39,7 +39,7 @@ Many interesting models cover phenomena in physics.  For example...
 ---
 
 <div class="notes">
-But today I'll be focusing on computer modelling and simulation.  The underlying techniques -- mathematical modelling and numerical approximation -- are not new, but modern computing power has made them far more powerful.
+But today I'll be focusing on computer modelling and simulation.  The underlying techniques -- mathematical modelling and numerical approximation -- are not new, but modern computing power has made them far more powerful.  The basic idea behind most of these is that you take complicated phenomena and discretize them, breaking them into a bunch of chunks that a computer can handle.
 </div>
 
 ---
@@ -47,7 +47,7 @@ But today I'll be focusing on computer modelling and simulation.  The underlying
 <video controls><source  src="content/Dynamic_Curving.webm"></video>
 
 <div class="notes">
-In my work as an engineer, I model and simulate extensively.  I do a fair bit of multibody dynamics; I take bodies as rigid masses, make connections between them, and see how they all move.  Here is the output from NUCARS, rail-specific multibody dynamics software, for a railcar being tested in what is known as Dynamic Curving, a standard test for suspension performance.  It's a crazy test, you go around a curve, and the rails start going up and down, and one of the rails goes in and out, and there's just a lot of stuff going on.  Let's watch it:
+In my work as an engineer, I model and simulate extensively.  I do a fair bit of multibody dynamics; I take a railcar, break it into several rigid masses, make connections between them, and calculate the position of those bodies every hundredth of a second.  Here is the output from NUCARS, rail-specific multibody dynamics software, for a railcar being tested in what is known as Dynamic Curving, a standard test for suspension performance.  It's a crazy test, you go around a curve, and the rails start going up and down, and one of the rails goes in and out, and there's just a lot of stuff going on.  Let's watch it:
 
 This box is the car body, and we've got the suspension and wheels down here, then the rails along the bottom.  We get into the curve, and... wow!  Look at it go!
 
@@ -59,7 +59,25 @@ So exciting!  Don't you love it?  No, you don't?  Okay, how about this:
 <video controls><source src="content/openknee.webm"></video>
 
 <div class="notes">
-Here is a finite element analysis of a knee joint from the Open Knee project that I worked on for my Master's thesis.  The finite element method is used for a number of things, but I use it (both here and in my current work) for finding stresses and deformations of solids under load. [TODO more description]
+Here is a finite element analysis of a knee joint from the Open Knee project that I worked on for my Master's thesis.  The finite element method is used for a number of things, but I use it (both here and in my current work) for finding stresses and deformations of solids under load.  Here, each body is broken into a lot of small, squishy cubes, and their deformation and stress is calculated every tenth of a second.  The colours here show the stress in the cartilage of the knee under load.
+</div>
+
+---
+
+<video controls><source src="content/MW_stars.webm"></video>
+
+<div class="notes">
+Still not cool enough?  How about some galaxy simulation?  These were done by Ben Keller at McMaster as part of his  PhD work.  500 million years of evolution of a Milky-Way-style galaxy.  This one looks attractive, right?  But this one's just for show.
+</div>
+
+---
+
+<video controls><source src="content/isolated_MW.webm"></video>
+
+<div class="notes">
+The real results are here.  The top images show density of interstellar gas, while the bottom are showing temperature in a slice through the center of the galaxy.  This simulation was done using smoothed particle hydrodynamics, breaking the gas into lumps that slide past each other.  For this, the timestep is several hundred years.
+
+This work was on the effects of superbubbles, essentially clusters of supernovae resulting in a giant gas bubble.  Ben's work on incorporating those into more classic simulations shows just how important they are in galaxy formation.
 </div>
 
 ---
