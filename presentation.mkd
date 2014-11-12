@@ -84,18 +84,21 @@ This work was on the effects of superbubbles, essentially clusters of supernovae
 
 ---
 
-[TODO non-physics sim?]
-[TODO optimization]
-[TODO benefits to development]
+<video controls><source src="content/topopt.webm"></video>
 
 <div class="notes">
-
+When you can simulate something accurately, there's a neat thing you can do, from an engineering design perspective.  By simulating over and over, you can have your computer optimize the design automatically, working toward some goal.  Shown here is a common test application, with a beam being optimized for low weight and high stiffness.
 </div>
 
 ---
 
+
 <div class="notes">
-Okay, so maybe you don't think they're all that cool.  They're not very dramatic and, as you might have noticed, there isn't a whole lot of effort put into cool graphics.  Because all these simulations are focused on science.  For these, it's important that the simulations are very accurate, but only in a very narrow domain.
+And not all simulations, nor optimizations, have to revolve around physics problems.  Simulations are used to analyze the timings of traffic lights, or the way groups of people exit buildings in emergencies, or the way people board airplanes, or the way parts flow through factories.  These are all real examples, and all of them have been optimized through simulation (though I'll understand if you don't believe me about the traffic lights).
+
+By now, I think you're starting to see how useful these techniques are in both science and engineering.  Just think about product design: prototyping stages can almost disappear when you can instead do hundreds of simulated prototypes in less time for less money.  Simulation is one of the technologies enabling the rapid development we see, like in the pace of evolution of smartphones.
+
+But for all their societal importance, these simulations don't look very cool.  They're not very dramatic and, as you might have noticed, there isn't a whole lot of effort put into cool graphics.  Because all these simulations are focused on science.  For these, it's important that the simulations are very accurate, but only in a very narrow domain.
 </div>
 
 ---
@@ -103,9 +106,7 @@ Okay, so maybe you don't think they're all that cool.  They're not very dramatic
 <video controls><source src="content/derail.webm"></video>
 
 <div class="notes">
-For example, those railcar simulations of mine only work as long as the train is on the tracks.  If the simulation ever gets cool enough that the train flies off the tracks?  In real life it would look cool, but that's the point where my simulation stops being at all useful.  So we see the car shake violently, the wheels lift off!  And it stops.  Because if you care about the car's performance, derailment is a total failure, and anything happening after doesn't change that fact.  So I don't bother simulating it.
-
-Of course, the real purpose of these simulations is not to produce cool videos.  They're focused on *making accurate predictions*, and the animations exist only as a means of *understanding the results*.
+For example, those railcar simulations of mine only work as long as the train is on the tracks.  If the simulation ever gets cool enough that the train flies off the tracks?  In real life it would look *awesome*, but that's the point where my simulation stops being at all useful.  So we see the car shake violently, the wheels lift off!  And it stops.  Because if you care about the car's performance, derailment is a total failure, and anything happening after doesn't change that fact.  So I don't bother simulating it.
 </div>
 
 ---
