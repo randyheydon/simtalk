@@ -195,6 +195,12 @@ Interesting fact: these water simulations build on smoothed particle hydrodynami
 
 ---
 
+<div class="notes">
+The point is that all these highly detailed animations can be created quickly and attractively with far less human effort than traditional animation.  To some extent, this is making animation more accessible to smaller outfits: even Pixar's animation department started out as just one guy.  So simulation techniques are opening animation to more people.  That means more good animation, and more bad ones, but you can't simulate talent.
+</div>
+
+---
+
 <video controls><source src="content/openworm.webm"></video>
 
 <div class="notes">
