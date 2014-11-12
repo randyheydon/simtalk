@@ -11,7 +11,8 @@ all: presentation webpage
 
 # TODO maybe:
 #	--incremental
-#	-V theme=something
+#	-V theme=something; see content/reveal.js/css/theme
+#	-V transition=something; see end of generated HTML
 #	--template=file
 #	--self-contained
 #	--bibliography=content/sources.bib
@@ -19,6 +20,8 @@ all: presentation webpage
 presentation: $(INPUT)
 	$(PANDOC) -t revealjs\
 	          -V revealjs-url=content/reveal.js\
+	          -V theme=serif\
+	          -V transition=fade\
 	          --smart\
 	          --standalone\
 	          -o $(PRESENTATION) $(INPUT)
