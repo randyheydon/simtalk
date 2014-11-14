@@ -201,6 +201,25 @@ The point is that all these highly detailed animations can be created quickly an
 
 ---
 
+<video controls><source src="content/glider.webm"></video>
+
+<div class="notes">
+Another potential application we're starting to see now is in historical preservation.  These gliders were used in the D-Day invasion in WWII.  They were designed to be cheap and disposable, landing in unprepared fields behind enemy lines and abandoned so its crew could capture bridges and stuff.  Only about 20 of these still exist.
+
+But some people reconstructed one digitally, combining the old construction drawings with 3D scans of one of the few remaining gliders.  And then, here's the simulation part, they used their model to simulate the dangerous landings that their pilots had to do.  Think about that: they took something experienced by maybe a few hundred people over 70 years ago, and made it possible for us, and everyone after us, to experience the same thing.
+</div>
+
+---
+
+<video controls><source src="content/gran_turismo.webm"></video>
+
+<div class="notes">
+Closer to the present, consider our cars.  As models age, they get harder to find.  Even some current models will never be available to the likes of us.  And in the future, gasoline engines may disappear entirely.  But games like Gran Turismo are already preserving those experiences, even if that's not their main goal.  The future will always be able to access those experiences through simulation, whether those experiences involve the super-high-end cars shown here, or the Ford Focus that someone's grandparents had.  As long as these games stay playable, these experiences can be had.
+(see http://www.playthepast.org/?p=4938)
+</div>
+
+---
+
 <video controls><source src="content/openworm.webm"></video>
 
 <div class="notes">
@@ -244,33 +263,13 @@ Weather prediction is another.  Broad trends can be predicted, but weather is a 
 
 Alright, we've got the disappointing stuff out of the way, so *now* back to the future of simulation.
 
-One thing I hope to see will be an intersection between art and engineering simulation.  For example, kinetic sculptures pushed to their limits of speed and strength with engineering simulation and optimization techniques used to bring them there.  Or maybe that's just something I want to work on.
+One thing I hope to see will be more of an intersection between art and engineering simulation.  For example, kinetic sculptures pushed to their limits of speed and strength with engineering simulation and optimization techniques used to bring them there.  Or maybe that's just something I want to work on.
 
 Also, simulations can produce a lot of data and important insights, but those insights are usually only comprehensible to the very technical people who made them.  Art is a great way to communicate complex ideas intuitively; maybe we'll see art that attempts to communicate the results of important simulations.
 </div>
 
 ---
 
-<video controls><source src="content/glider.webm"></video>
-
-<div class="notes">
-Another intersection, starting to happen now, is in historical preservation.  These gliders were used in the D-Day invasion in WWII.  They were designed to be cheap and disposable, landing in unprepared fields behind enemy lines and abandoned so its crew could capture bridges and stuff.  Only about 20 of these still exist.
-
-But some people reconstructed one digitally, combining the old construction drawings with 3D scans of one of the few remaining gliders.  And then, here's the simulation part, they used their model to simulate the dangerous landings that their pilots had to do.  Think about that: they took something experienced by maybe a few hundred people over 70 years ago, and made it possible for us, and everyone after us, to experience the same thing.
-</div>
-
----
-
-<video controls><source src="content/gran_turismo.webm"></video>
-
-<div class="notes">
-Closer to the present, consider our cars.  As models age, they get harder to find.  Even some current models will never be available to the likes of us.  And in the future, gasoline engines may disappear entirely.  But games like Gran Turismo are already preserving those experiences, even if that's not their main goal.  The future will always be able to access those experiences through simulation, whether those experiences involve the super-high-end cars shown here, or the Ford Focus that someone's grandparents had.  As long as these games stay playable, these experiences can be had.
-(see http://www.playthepast.org/?p=4938)
-</div>
-
----
-
-[TODO neat things for the future of engsim]
 <div class="notes">
 TODO democratization, particularly with reduced-order models (response surfaces)
 TODO more multiphysics, fewer people who understand the full model
@@ -278,3 +277,7 @@ TODO new methods like atom-level
 TODO more high-performance stuff?
 TODO massive amounts of output data creating challenges in understanding (goes with big data stuff)
 </div>
+
+---
+
+TODO some cool closing video
