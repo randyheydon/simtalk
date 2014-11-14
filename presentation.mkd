@@ -225,28 +225,25 @@ But the gap to full human brain simulation is very large.  I don't know when it 
 ---
 
 <div class="notes">
-And now we're getting into the idea of a fully simulated human mind, one that can think and feel, indistinguishable from how we do.  And if we can eventually simulate one human, then maybe we could one day we could simulate more -- even, say, a whole planet-full of them.  And then we have to ask: is that happening to us right now?  It's been argued that, assuming we will be capable of such simulations, and assuming we have interest in performing them, there will actually be more simulated people than real ones, meaning we have a better than even chance of all being in a simulation right now.
+And now we're getting into the idea of a fully simulated human mind, one that can think and feel, indistinguishable from how we do.  And if we can eventually simulate one human, then maybe we could one day we could simulate more -- even, say, a whole planet-full of them.  And then we have to ask: is that happening to us right now?  Not just like The Matrix, with real people in a simulation, but simulated people in a simulation.  It's been argued that, assuming we will be capable of such simulations, and assuming we have interest in performing them, there will actually be more simulated people than real ones, meaning we have a better than even chance of all being simulations right now.
 (see http://www.simulation-argument.com/simulation.html)
 
 Being humans, all of us deserve human rights (like not being unexpectedly killed), and we could be simulations, so don't human simulations also deserve human rights (like not being unexpectedly shut off)?  And if they do, then simulated minds similar to humans must have rights too.  Then at what level of simulation complexity is required for personhood?  If you play The Sims and burn them alive, you don't get arrested for murder.  If you imagine a person in horrible pain, that's a simulation running in your head, but it's not considered torture.  But if you have a fully accurate human brain simulation and subject it to pain, how is that different from doing the same to real human?
 
 But I'm not here to delve into philosophy.  Back to the future of simulation:
-</div>
 
----
+Or rather, let's take a moment to talk about what the future doesn't hold.  What are the limits of simulation?
 
-[TODO neat things for the future of engsim]
-<div class="notes">
-TODO democratization, particularly with reduced-order models (response surfaces)
-TODO more multiphysics, fewer people who understand the full model
-TODO new methods like atom-level
-TODO more high-performance stuff?
-TODO massive amounts of output data creating challenges in understanding (goes with big data stuff)
-</div>
+The obvious limit is computer power.  Any model needs a certain level of detail to produce accurate results, meaning it needs to be broken into more, smaller pieces.  Like my stress analysis needs smaller cubes, or those fluids need smaller blob sizes.  Since a lot of simulations are in three dimensions, any change in piece size increases the number of pieces by its cube.  So if you want your elements to be half the size, you need not twice as many elements, but *eight times* as many.  If you also want shorter time steps between each calculation, you now have *sixteen times* as many pieces to deal with.  If you then want to change a parameter of the model, like you would do while optimizing, that brings you up to 32 times.  Add another parameter, and you're at 64.  Add a few more, and you realize you've got yourself some exponential growth, and that's not easy to deal with.
 
----
+So far, computing power been growing at an exponential rate too.  If we're lucky, it will stay that way for a while, but there are some signs that our computers are reaching the limits of physics.  Even if it continues exponentially, it just means that it can keep up with our exponential simulation problem: every time computing power doubles, we can get one step further.  So getting a planet full of people in a simulation?  It's pretty far off.
 
-<div class="notes">
+We also run into trouble with problems that aren't consistent enough to be analyzed.  In my line of work, metal fatigue is a big one.  That's when you put small amounts of stress through something enough times that it breaks, like bending a paper clip back and forth.  The time that takes to happen depends on a million things we can't measure, from the exact arrangement of atoms to the exact temperatures it goes through, and there are probably a lot of factors we don't even know about, so we can only analyze it statistically.  There are techniques for statistical simulations, namely Monte Carlo simulations where you simulate over and over with random variations and see how all the results are distributed.  But that just brings you back to the problem before of an exploding number of options.  We'll need a more thorough understanding of the problem before we can simulate it accurately.
+
+Weather prediction is another.  Broad trends can be predicted, but weather is a chaotic process.  Small changes, like that butterfly that everyone talks about, turn into big changes down the line.  If your simulation doesn't include that butterfly, you get the wrong results.  No amount of computing power will make 7-day forecasts any more reliable.
+
+Alright, we've got the disappointing stuff out of the way, so *now* back to the future of simulation.
+
 One thing I hope to see will be an intersection between art and engineering simulation.  For example, kinetic sculptures pushed to their limits of speed and strength with engineering simulation and optimization techniques used to bring them there.  Or maybe that's just something I want to work on.
 
 Also, simulations can produce a lot of data and important insights, but those insights are usually only comprehensible to the very technical people who made them.  Art is a great way to communicate complex ideas intuitively; maybe we'll see art that attempts to communicate the results of important simulations.
@@ -262,7 +259,6 @@ Another intersection, starting to happen now, is in historical preservation.  Th
 But some people reconstructed one digitally, combining the old construction drawings with 3D scans of one of the few remaining gliders.  And then, here's the simulation part, they used their model to simulate the dangerous landings that their pilots had to do.  Think about that: they took something experienced by maybe a few hundred people over 70 years ago, and made it possible for us, and everyone after us, to experience the same thing.
 </div>
 
-
 ---
 
 <video controls><source src="content/gran_turismo.webm"></video>
@@ -274,8 +270,11 @@ Closer to the present, consider our cars.  As models age, they get harder to fin
 
 ---
 
-[TODO sim limits]
-
+[TODO neat things for the future of engsim]
 <div class="notes">
-But how far can we improve?  Where does it stop?  TODO
+TODO democratization, particularly with reduced-order models (response surfaces)
+TODO more multiphysics, fewer people who understand the full model
+TODO new methods like atom-level
+TODO more high-performance stuff?
+TODO massive amounts of output data creating challenges in understanding (goes with big data stuff)
 </div>
