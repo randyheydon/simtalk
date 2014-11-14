@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="content/reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+    <link rel="stylesheet" href="content/reveal.js/css/theme/simple.css" id="theme">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'content/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+    <!--[if lt IE 9]>
+    <script src="content/reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="simulating-everything-and-its-consequences" class="slide level1">
+<h1>Simulating Everything and its Consequences</h1>
+<p>Randy Heydon, P.Eng.</p>
+<aside class="notes">
+I want to show you the things that are happening because of computer modelling and simulation, the effect it has on your lives, and where it might go in the future. I’m a mechanical engineer working at National Steel Car. I design freight train cars. Even in such an old industry, modelling and simulation are major parts of the job and continue to drive the industry forward. And in other industries, they’re even bigger business.
+</aside>
+</section>
+<section id="model" class="slide level1">
+<h1>Model</h1>
+<p>Represents a thing such that you can ask specific questions about that thing</p>
+<aside class="notes">
+Just so we all agree what we’re talking about: modelling is as stated here. It’s a very general term, and isn’t specific to computers. An architectural model answers questions about how a proposed building will look. A fashion model answers questions about how clothing will look on people (although it’s not in their interest to answer that <em>accurately</em>).
+</aside>
+</section>
+<section id="simulation" class="slide level1">
+<h1>Simulation</h1>
+<p>A model that evolves over time.</p>
+<aside class="notes">
+<p>Simulation is taking a model and evolving it over time. Simple as that. Frankly, I don’t consider that too distinct from modelling, so I’m going to consider both today.</p>
+Many interesting models cover phenomena in physics. For example…
+</aside>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="content/Horse_simulator_WWI.jpg" />
+</figure>
+<aside class="notes">
+…this hilarious horse simulator I saw on Wikipedia. Its motions evolve with time, thereby telling you what it’s like to ride a horse. Ostensibly. It’s probably an imperfect simulation, but it’s been said that “all models are wrong, but some are useful” (statistician George E. P. Box).
+</aside>
+</section>
+<section class="slide level1">
+
+<aside class="notes">
+But today I’ll be focusing on computer modelling and simulation. The underlying techniques – mathematical modelling and numerical approximation – are not new, but modern computing power has made them far more powerful. The basic idea behind most of these is that you take complicated phenomena and discretize them, breaking them into a bunch of chunks that a computer can handle.
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source  src="content/Dynamic_Curving.webm">
+</video>
+
+<aside class="notes">
+<p>In my work as an engineer, I model and simulate extensively. I do a fair bit of multibody dynamics; I take a railcar, break it into several rigid masses, make connections between them, and calculate the position of those bodies every hundredth of a second. Here is the output from NUCARS, rail-specific multibody dynamics software, for a railcar being tested in what is known as Dynamic Curving, a standard test for suspension performance. It’s a crazy test, you go around a curve, and the rails start going up and down, and one of the rails goes in and out, and there’s just a lot of stuff going on. Let’s watch it:</p>
+<p>This box is the car body, and we’ve got the suspension and wheels down here, then the rails along the bottom. We get into the curve, and… wow! Look at it go!</p>
+So exciting! Don’t you love it? No, you don’t? Well too bad, it’s important! I’ve run literally thousands of simulations like this while developing new suspension systems without having to build even one physical prototype. My work can progress in a way that was totally impossible for much of the history of rail. But fine, it’s not attractive, so let’s see something more colourful:
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source src="content/openknee.webm">
+</video>
+
+<aside class="notes">
+<p>Here is a finite element analysis of a knee joint from the Open Knee project that I worked on for my Master’s thesis. The finite element method is used for a number of things, but I use it (both here and in my current work) for finding stresses and deformations of solids under load. Here, each body is broken into a lot of small, squishy cubes, and their deformation and stress is calculated every tenth of a second. The colours here show the stress in the cartilage of the knee under load.</p>
+This process is still in development, but could help physicians and surgeons better understand the origins of certain injuries and degradations in the knee. But if that’s still not cool enough:
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source src="content/MW_stars.webm">
+</video>
+
+<aside class="notes">
+How about some galaxy simulation? These were done by Ben Keller at McMaster as part of his PhD work. 500 million years of evolution of a Milky-Way-style galaxy. This one looks attractive, right? But this one’s just for show.
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source src="content/isolated_MW.webm">
+</video>
+
+<aside class="notes">
+<p>The real results are here. The top images show density of interstellar gas, while the bottom are showing temperature in a slice through the center of the galaxy. This simulation was done using smoothed particle hydrodynamics, breaking the gas into lumps that slide past each other. For this, the timestep is several hundred years.</p>
+This work was on the effects of superbubbles, essentially clusters of supernovae resulting in a giant gas bubble. Ben’s work on incorporating those into more classic simulations shows just how important they are in galaxy formation.
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source src="content/topopt.webm">
+</video>
+
+<aside class="notes">
+When you can simulate something accurately, there’s a neat thing you can do, from an engineering design perspective. By simulating over and over, you can have your computer optimize the design automatically, working toward some goal. Shown here is a common test application, with a beam being optimized for low weight and high stiffness.
+</aside>
+</section>
+<section class="slide level1">
+
+<aside class="notes">
+<p>And not all simulations, nor optimizations, have to revolve around physics problems. Simulations are used to analyze the timings of traffic lights, or the way groups of people exit buildings in emergencies, or the way people board airplanes, or the way parts flow through factories. These are all real examples, and all of them have been optimized through simulation (though I’ll understand if you don’t believe me about the traffic lights).</p>
+<p>By now, I think you’re starting to see how useful these techniques are in both science and engineering. Just think about product design: prototyping stages can almost disappear when you can instead do hundreds of simulated prototypes in less time for less money. Simulation is one of the technologies enabling the rapid development we see, like in the pace of evolution of smartphones.</p>
+But for all their societal importance, these simulations don’t look very cool. They’re not very dramatic and, as you might have noticed, there isn’t a whole lot of effort put into cool graphics. Because all these simulations are focused on science. For these, it’s important that the simulations are very accurate, but only in a very narrow domain.
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source src="content/derail.webm">
+</video>
+
+<aside class="notes">
+For example, those railcar simulations of mine only work as long as the train is on the tracks. If the simulation ever gets cool enough that the train flies off the tracks? In real life it would look <em>awesome</em>, but that’s the point where my simulation stops being at all useful. So we see the car shake violently, the wheels lift off! And it stops. Because if you care about the car’s performance, derailment is a total failure, and anything happening after doesn’t change that fact. So I don’t bother simulating it.
+</aside>
+</section>
+<section class="slide level1">
+
+<aside class="notes">
+<p>But if you want to see some prettier pictures, we can instead take a look in the art world.</p>
+The obvious artistic application of simulation is in video games. Tons of games incorporate some form of physics simulation. You’ll notice an important difference between these and the earlier scientific simulations: these must operate fast enough to respond to user input. To accomplish this, they crank down the accuracy, using algorithms that are fast while representing reality only well enough to fool the player. Take this clip from Goat Simulator, for example:
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source src="content/goat.webm">
+</video>
+
+<aside class="notes">
+The goat headbutts the gas tank, the gas tank explodes, and the goat is sent flying. Then bounces off a tree. Makes sense, right? But if we wanted to do a more accurate simulation, it would end up looking more like this:
+</aside>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="content/pressure_vessel.png" />
+</figure>
+<aside class="notes">
+<p>We apply some pressure to the inside of the tank, and some forces to the outside, and the whole thing deforms until we satisfy whatever regulations we need to. We can see it deform and we can see the stress in it, but we don’t see it explode, because that’s well beyond our area of interest and would require adding a whole lot of extra features to the simulation, making it run even slower.</p>
+<p>Now, how does the game simulate it? Well, the box around the headbutt intersects with the box around the tank, an explosion happens in a sphere around the contact, and the goat is given a high speed away from it. That was a lot easier. But with this method, we don’t know whether the goat would actually break the tank, we don’t know the actual shape of the explosion, we don’t know if it would actually ignite, we don’t know if there would be any safe areas around the tank, and we don’t know how fast the goat would be flung…. But it sure is fun this way. And what makes it fun is that it all happens in real-time, where we can react to it and play with it, instead of waiting overnight for all the specifics to be calculated.</p>
+And that’s the key factor that distinguishes video game simulation from scientific: the video game simulation <em>must</em> be performed fast enough for the player to live in it, and to hell with accuracy. They can, and sometimes do, use the same techniques, but the video game has to be much faster.
+</aside>
+</section>
+<section class="slide level1">
+
+<aside class="notes">
+Simulation is also useful in non-interactive media. Film, and even static images can be produced more quickly and attractively with simulations filling in the details. In these cases, speed is obviously not as critical as in video games – your simulations can take as long as they want, as long as they result in a movie at the end – and neither is the accuracy of science. The most important part of these simulations is that it looks good.
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source src="content/Sintel-fire.webm">
+</video>
+
+<aside class="notes">
+Sintel is a short computer-animated film that simulated, say, the fire and smoke around the pot, or the way hair and fabric falls.
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source src="content/Sintel-dragon.webm">
+</video>
+
+<aside class="notes">
+<p>or the fire breath of this dragon.</p>
+In traditional animation, every part of these scenes would be drawn by hand. The animators would, in a sense, simulate fire in their heads and transcribe it, frame-by-frame. It allows a lot of artistic control over the final result, but only with extensive effort put in.
+</aside>
+</section>
+<section class="slide level1">
+
+<aside class="notes">
+If you want to see what kind of techniques are coming on the horizon, a good place to look is SIGGRAPH. This is an annual conference on computer graphics, where researchers discuss new techniques for making computer graphics faster and more attractive. It’s not strictly about art or simulation, but a lot of it appears.
+</aside>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="content/hair.png" />
+</figure>
+<aside class="notes">
+Like this work. These researchers developed a method to read in a hairstyle, like from photographs, and work out the underlying parameters to allow its motion to be simulated believably. So you could have an actor converted to a model for a particular scene and have hair that still behaves properly. Admittedly, this image is kind of creepy and not very artistic, but it was made by researchers, not artists themselves.
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source src="content/splashing.webm">
+</video>
+
+<aside class="notes">
+More entertaining are water simulations, like these large-scale splashing liquids (really, that’s the title of the paper).
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source src="content/surface_tension.webm">
+</video>
+
+<aside class="notes">
+<p>And these small-scale surface tension simulations.</p>
+Interesting fact: these water simulations build on smoothed particle hydrodynamics, the same method used in the galaxy simulation earlier.
+</aside>
+</section>
+<section class="slide level1">
+
+<aside class="notes">
+The point is that all these highly detailed animations can be created quickly and attractively with far less human effort than traditional animation. To some extent, this is making animation more accessible to smaller outfits: even Pixar’s animation department started out as just one guy. So simulation techniques are opening animation to more people. That means more good animation, and more bad ones, but you can’t simulate talent.
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source src="content/glider.webm">
+</video>
+
+<aside class="notes">
+<p>Another potential application we’re starting to see now is in historical preservation. These gliders were used in the D-Day invasion in WWII. They were designed to be cheap and disposable, landing in unprepared fields behind enemy lines and abandoned so its crew could capture bridges and stuff. Only about 20 of these still exist.</p>
+But some people reconstructed one digitally, combining the old construction drawings with 3D scans of one of the few remaining gliders. And then, here’s the simulation part, they used their model to simulate the dangerous landings that their pilots had to do. Think about that: they took something experienced by maybe a few hundred people over 70 years ago, and made it possible for us, and everyone after us, to experience the same thing.
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source src="content/gran_turismo.webm">
+</video>
+
+<aside class="notes">
+Closer to the present, consider our cars. As models age, they get harder to find. Even some current models will never be available to the likes of us. And in the future, gasoline engines may disappear entirely. But games like Gran Turismo are already preserving those experiences, even if that’s not their main goal. The future will always be able to access those experiences through simulation, whether those experiences involve the super-high-end cars shown here, or the Ford Focus that someone’s grandparents had. As long as these games stay playable, these experiences can be had. (see http://www.playthepast.org/?p=4938)
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source src="content/openworm.webm">
+</video>
+
+<aside class="notes">
+<p>Another neat thing currently in progress: brain simulation.</p>
+<p>An important project in brain modelling is the OpenWorm. This includes a complete simulation of a nematode worm, a tiny, simple, and very well-studied animal. It has under 1000 cells, including just 302 neurons. So OpenWorm is creating a complete cell-level model of this worm, allowing for complete simulation of the worm and how it interacts with its environment. It’s still in development, but once complete could act as the base for simulations of larger animals, progressing eventually to humans. (see http://www.openworm.org)</p>
+Interesting fact: the muscle movements work on smoothed particle hydrodynamics, same as those water simulations earlier and the galaxy simulation before that. It surprised me how versatile this method is.
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source src="content/spaun.webm">
+</video>
+
+<aside class="notes">
+<p>There is already some work on simulated human brains. Spaun, from the University of Waterloo, has 2.5 million neurons and is attached to simple visual input and a single simulated arm that it can control. It’s still a far, far cry from the 85 billion neurons in a full human brain (34,000 times larger!), but it can already perform some simple human-like tasks, and shows human-like limitations, like how many numbers it can memorize at once.</p>
+But the gap to full human brain simulation is very large. I don’t know when it will be possible, but I have no doubt that it will be. If our brain simulation capacity matches Moore’s law, it could be just 30 years off, before 2050. I’m not convinced it’ll actually be that quick, but the point is that it’s not impossibly far either.
+</aside>
+</section>
+<section class="slide level1">
+
+<aside class="notes">
+<p>And now we’re getting into the idea of a fully simulated human mind, one that can think and feel, indistinguishable from how we do. And if we can eventually simulate one human, then maybe we could one day we could simulate more – even, say, a whole planet-full of them. And then we have to ask: is that happening to us right now? Not just like The Matrix, with real people in a simulation, but simulated people in a simulation. It’s been argued that, assuming we will be capable of such simulations, and assuming we have interest in performing them, there will actually be more simulated people than real ones, meaning we have a better than even chance of all being simulations right now. (see http://www.simulation-argument.com/simulation.html)</p>
+<p>Being humans, all of us deserve human rights (like not being unexpectedly killed), and we could be simulations, so don’t human simulations also deserve human rights (like not being unexpectedly shut off)? And if they do, then simulated minds similar to humans must have rights too. Then at what level of simulation complexity is required for personhood? If you play The Sims and burn them alive, you don’t get arrested for murder. If you imagine a person in horrible pain, that’s a simulation running in your head, but it’s not considered torture. But if you have a fully accurate human brain simulation and subject it to pain, how is that different from doing the same to real human?</p>
+<p>But I’m not here to delve into philosophy. Back to the future of simulation:</p>
+<p>Or rather, let’s take a moment to talk about what the future doesn’t hold. What are the limits of simulation?</p>
+<p>The obvious limit is computer power. Any model needs a certain level of detail to produce accurate results, meaning it needs to be broken into more, smaller pieces. Like my stress analysis needs smaller cubes, or those fluids need smaller blob sizes. Since a lot of simulations are in three dimensions, any change in piece size increases the number of pieces by its cube. So if you want your elements to be half the size, you need not twice as many elements, but <em>eight times</em> as many. If you also want shorter time steps between each calculation, you now have <em>sixteen times</em> as many pieces to deal with. If you then want to change a parameter of the model, like you would do while optimizing, that brings you up to 32 times. Add another parameter, and you’re at 64. Add a few more, and you realize you’ve got yourself some exponential growth, and that’s not easy to deal with.</p>
+<p>So far, computing power been growing at an exponential rate too. If we’re lucky, it will stay that way for a while, but there are some signs that our computers are reaching the limits of physics. Even if it continues exponentially, it just means that it can keep up with our exponential simulation problem: every time computing power doubles, we can get one step further. So getting a planet full of people in a simulation? It’s pretty far off.</p>
+<p>We also run into trouble with problems that aren’t consistent enough to be analyzed. In my line of work, metal fatigue is a big one. That’s when you put small amounts of stress through something enough times that it breaks, like bending a paper clip back and forth. The time that takes to happen depends on a million things we can’t measure, from the exact arrangement of atoms to the exact temperatures it goes through, and there are probably a lot of factors we don’t even know about, so we can only analyze it statistically. There are techniques for statistical simulations, namely Monte Carlo simulations where you simulate over and over with random variations and see how all the results are distributed. But that just brings you back to the problem before of an exploding number of options. We’ll need a more thorough understanding of the problem before we can simulate it accurately.</p>
+<p>Weather prediction is another. Broad trends can be predicted, but weather is a chaotic process. Small changes, like that butterfly that everyone talks about, turn into big changes down the line. If your simulation doesn’t include that butterfly, you get the wrong results. No amount of computing power will make 7-day forecasts any more reliable.</p>
+<p>Alright, we’ve got the disappointing stuff out of the way, so <em>now</em> back to the future of simulation.</p>
+<p>One thing I hope to see will be more of an intersection between art and engineering simulation. For example, kinetic sculptures pushed to their limits of speed and strength with engineering simulation and optimization techniques used to bring them there. Or maybe that’s just something I want to work on.</p>
+<p>Also, simulations can produce a lot of data and important insights, but those insights are usually only comprehensible to the very technical people who made them. Art is a great way to communicate complex ideas intuitively; maybe we’ll see art that attempts to communicate the results of important simulations.</p>
+<p>Along that line, there is currently movement in engineering toward democratization of simulation. Up until now, the work has always been done by experts, but software developers are trying to open up to a wider audience. You usually need an expert to make sure the simulation is done right, but more computing power sometimes means you skip making hard decisions and just let the computer work harder. As a result, interfaces are getting easier to use; you can even run simulations on your phone. And more connectivity means you could set up the simulation on your phone and send it off to a beefy computer somewhere else to do the running. You could all be simulating something <em>right now</em>, and you’ll only do more of it in the future.</p>
+<p>On the other end of the scale, more complex simulations are helping to drive newer technology and better designs. Detailed simulations of electric motors are starting to appear, showing the interplay of electricity, magnetism, heat, and mechanics, allowing optimization of something we kinda take for granted. These simulations are an enabling technology of the electric cars that have been appearing lately, and they’re getting better too.</p>
+And that’s everything I have to tell you today. I hope I’ve convinced you of just how much of an impact the world of simulation has on the rest of the world. As technology advances at faster paces, think of all the simulated versions that made it happen. When you see a work of art, consider that it could have been handcrafted, or it could have been simulated. And when you consider how to approach your next problem in art or design, I hope you’ll think about our discussion today.
+</aside>
+</section>
+<section class="slide level1">
+
+<video controls>
+<source src="content/illustris.webm">
+</video>
+
+<aside class="notes">
+And just for fun, here’s a beautiful looking universe scale simulation.
+</aside>
+</section>
+    </div>
+  </div>
+
+
+  <script src="content/reveal.js/lib/js/head.min.js"></script>
+  <script src="content/reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: 'serif', // available themes are in /css/theme
+        transition: 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'content/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'content/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'content/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'content/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'content/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+    </body>
+</html>
