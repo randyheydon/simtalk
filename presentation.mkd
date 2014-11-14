@@ -266,18 +266,20 @@ Alright, we've got the disappointing stuff out of the way, so *now* back to the 
 One thing I hope to see will be more of an intersection between art and engineering simulation.  For example, kinetic sculptures pushed to their limits of speed and strength with engineering simulation and optimization techniques used to bring them there.  Or maybe that's just something I want to work on.
 
 Also, simulations can produce a lot of data and important insights, but those insights are usually only comprehensible to the very technical people who made them.  Art is a great way to communicate complex ideas intuitively; maybe we'll see art that attempts to communicate the results of important simulations.
+
+Along that line, there is currently movement in engineering toward democratization of simulation.  Up until now, the work has always been done by experts, but software developers are trying to open up to a wider audience.  You usually need an expert to make sure the simulation is done right, but more computing power sometimes means you skip making hard decisions and just let the computer work harder.  As a result, interfaces are getting easier to use; you can even run simulations on your phone.  And more connectivity means you could set up the simulation on your phone and send it off to a beefy computer somewhere else to do the running.  You could all be simulating something *right now*, and you'll only do more of it in the future.
+
+On the other end of the scale, more complex simulations are helping to drive newer technology and better designs.  Detailed simulations of electric motors are starting to appear, showing the interplay of electricity, magnetism, heat, and mechanics, allowing optimization of something we kinda take for granted.  These simulations are an enabling technology of the electric cars that have been appearing lately, and they're getting better too.
+
+TODO no more experts?
+
+And that's everything I have to tell you today.  I hope I've convinced you of just how much of an impact the world of simulation has on the rest of the world.  As technology advances at faster paces, think of all the simulated versions that made it happen.  When you see a work of art, consider that it could have been handcrafted, or it could have been simulated.  And when you consider how to approach your next problem in art or design, I hope you'll think about our discussion today.
 </div>
 
 ---
+
+<video controls><source src="content/illustris.webm"></video>
 
 <div class="notes">
-TODO democratization, particularly with reduced-order models (response surfaces)
-TODO more multiphysics, fewer people who understand the full model
-TODO new methods like atom-level
-TODO more high-performance stuff?
-TODO massive amounts of output data creating challenges in understanding (goes with big data stuff)
+And just for fun, here's a beautiful looking universe scale simulation.
 </div>
-
----
-
-TODO some cool closing video
