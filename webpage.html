@@ -31,7 +31,7 @@ Many interesting models cover phenomena in physics. For example…
 <img src="content/Horse_simulator_WWI.jpg" />
 </div>
 <div class="notes">
-…this hilarious horse simulator I saw on Wikipedia. Its motions evolve with time, thereby telling you what it’s like to ride a horse. Ostensibly. It’s probably an imperfect simulation, but it’s been said that “all models are wrong, but some are useful” (statistician George E. P. Box).
+…<a href="https://en.wikipedia.org/wiki/File:Horse_simulator_WWI.jpg">this hilarious horse simulator I saw on Wikipedia</a>. Its motions evolve with time, thereby telling you what it’s like to ride a horse. Ostensibly. It’s probably an imperfect simulation, but it’s been said that <a href="https://en.wikiquote.org/wiki/George_E._P._Box#Empirical_Model-Building_and_Response_Surfaces_.281987.29">“all models are wrong, but some are useful”</a>.
 </div>
 <hr />
 <div class="notes">
@@ -43,7 +43,7 @@ But today I’ll be focusing on computer modelling and simulation. The underlyin
 </video>
 
 <div class="notes">
-<p>In my work as an engineer, I model and simulate extensively. I do a fair bit of multibody dynamics; I take a railcar, break it into several rigid masses, make connections between them, and calculate the position of those bodies every hundredth of a second. Here is the output from NUCARS, rail-specific multibody dynamics software, for a railcar being tested in what is known as Dynamic Curving, a standard test for suspension performance. It’s a crazy test, you go around a curve, and the rails start going up and down, and one of the rails goes in and out, and there’s just a lot of stuff going on. Let’s watch it:</p>
+<p>In my work as an engineer, I model and simulate extensively. I do a fair bit of multibody dynamics; I take a railcar, break it into several rigid masses, make connections between them, and calculate the position of those bodies every hundredth of a second. Here is the output from NUCARS, rail-specific multibody dynamics software, for a railcar being tested in what is known as Dynamic Curving, a standard test for suspension performance (courtesy of, and with permission from my employer, <a href="http://www.steelcar.com/">National Steel Car</a>). It’s a crazy test, you go around a curve, and the rails start going up and down, and one of the rails goes in and out, and there’s just a lot of stuff going on. Let’s watch it:</p>
 <p>This box is the car body, and we’ve got the suspension and wheels down here, then the rails along the bottom. We get into the curve, and… wow! Look at it go!</p>
 So exciting! Don’t you love it? No, you don’t? Well too bad, it’s important! I’ve run literally thousands of simulations like this while developing new suspension systems without having to build even one physical prototype. My work can progress in a way that was totally impossible for much of the history of rail. But fine, it’s not attractive, so let’s see something more colourful:
 </div>
@@ -53,7 +53,7 @@ So exciting! Don’t you love it? No, you don’t? Well too bad, it’s importan
 </video>
 
 <div class="notes">
-<p>Here is a finite element analysis of a knee joint from the Open Knee project that I worked on for my Master’s thesis. The finite element method is used for a number of things, but I use it (both here and in my current work) for finding stresses and deformations of solids under load. Here, each body is broken into a lot of small, squishy cubes, and their deformation and stress is calculated every tenth of a second. The colours here show the stress in the cartilage of the knee under load.</p>
+<p>Here is a finite element analysis of a knee joint from <a href="https://simtk.org/home/openknee">the Open Knee project</a> that I worked on for <a href="http://catalogue.library.ryerson.ca/record=b2062305~S0">my Master’s thesis</a>. The finite element method is used for a number of things, but I use it (both here and in my current work) for finding stresses and deformations of solids under load. Here, each body is broken into a lot of small, squishy cubes, and their deformation and stress is calculated every tenth of a second. The colours here show the stress in the cartilage of the knee under load.</p>
 This process is still in development, but could help physicians and surgeons better understand the origins of certain injuries and degradations in the knee. But if that’s still not cool enough:
 </div>
 <hr />
@@ -62,7 +62,7 @@ This process is still in development, but could help physicians and surgeons bet
 </video>
 
 <div class="notes">
-How about some galaxy simulation? These were done by Ben Keller at McMaster as part of his PhD work. 500 million years of evolution of a Milky-Way-style galaxy. This one looks attractive, right? But this one’s just for show.
+How about some galaxy simulation? These were done by <a href="http://www.physics.mcmaster.ca/~kellerbw/">Ben Keller</a> at McMaster as part of his PhD work, including <a href="http://dx.doi.org/10.1093/mnras/stu1058">one paper so far</a>. 500 million years of evolution of a Milky-Way-style galaxy. This one looks attractive, right? But this one’s just for show.
 </div>
 <hr />
 <video controls>
@@ -79,7 +79,7 @@ This work was on the effects of superbubbles, essentially clusters of supernovae
 </video>
 
 <div class="notes">
-When you can simulate something accurately, there’s a neat thing you can do, from an engineering design perspective. By simulating over and over, you can have your computer optimize the design automatically, working toward some goal. Shown here is a common test application, with a beam being optimized for low weight and high stiffness.
+When you can simulate something accurately, there’s a neat thing you can do, from an engineering design perspective. By simulating over and over, you can have your computer optimize the design automatically, working toward some goal. <a href="https://www.youtube.com/watch?v=bvf6Dm_HF4A">Shown here</a> is a common test application, with a beam being <a href="http://dx.doi.org/10.1016/j.cma.2010.05.013">optimized for low weight and high stiffness</a>.
 </div>
 <hr />
 <div class="notes">
@@ -93,12 +93,13 @@ But for all their societal importance, these simulations don’t look very cool.
 </video>
 
 <div class="notes">
-For example, those railcar simulations of mine only work as long as the train is on the tracks. If the simulation ever gets cool enough that the train flies off the tracks? In real life it would look <em>awesome</em>, but that’s the point where my simulation stops being at all useful. So we see the car shake violently, the wheels lift off! And it stops. Because if you care about the car’s performance, derailment is a total failure, and anything happening after doesn’t change that fact. So I don’t bother simulating it.
+<p>For example, those railcar simulations of mine only work as long as the train is on the tracks. If the simulation ever gets cool enough that the train flies off the tracks? In real life it would look <em>awesome</em>, but that’s the point where my simulation stops being at all useful. So we see the car shake violently, the wheels lift off! And it stops (courtesy, again, of <a href="http://www.steelcar.com/">National Steel Car</a>). Because if you care about the car’s performance, derailment is a total failure, and anything happening after doesn’t change that fact. So I don’t bother simulating it.</p>
+A quick note: obviously railcars do derail sometimes. As a suspension designer, derailment is failure so I don’t simulate beyond it. But car structure designers still have to protect against it. They don’t simulate the dynamics leading to the derailment, but they do simulate worst-case possibilities for impacts and punctures after derailment. And if the structure fails, they stop their simulations and change their designs.
 </div>
 <hr />
 <div class="notes">
 <p>But if you want to see some prettier pictures, we can instead take a look in the art world.</p>
-The obvious artistic application of simulation is in video games. Tons of games incorporate some form of physics simulation. You’ll notice an important difference between these and the earlier scientific simulations: these must operate fast enough to respond to user input. To accomplish this, they crank down the accuracy, using algorithms that are fast while representing reality only well enough to fool the player. Take this clip from Goat Simulator, for example:
+The obvious artistic application of simulation is in video games. Tons of games incorporate some form of physics simulation. You’ll notice an important difference between these and the earlier scientific simulations: these must operate fast enough to respond to user input. To accomplish this, they crank down the accuracy, using algorithms that are fast while representing reality only well enough to fool the player. Take this clip from <a href="http://www.coffeestainstudios.com/games/goat-simulator">Goat Simulator</a>, for example:
 </div>
 <hr />
 <video controls>
@@ -106,7 +107,7 @@ The obvious artistic application of simulation is in video games. Tons of games 
 </video>
 
 <div class="notes">
-The goat headbutts the gas tank, the gas tank explodes, and the goat is sent flying. Then bounces off a tree. Makes sense, right? But if we wanted to do a more accurate simulation, it would end up looking more like this:
+The goat headbutts the gas tank, the gas tank explodes, and the goat is sent flying. Then bounces off a tree. Makes sense, right? But if we wanted to do a more accurate simulation, it would end up looking more like <a href="https://www.youtube.com/watch?v=OjA3jzRerXU">this</a>:
 </div>
 <hr />
 <div class="figure">
@@ -127,7 +128,7 @@ Simulation is also useful in non-interactive media. Film, and even static images
 </video>
 
 <div class="notes">
-Sintel is a short computer-animated film that simulated, say, the fire and smoke around the pot, or the way hair and fabric falls.
+<a href="https://durian.blender.org">Sintel</a> is a short computer-animated film that simulated, say, the fire and smoke around the pot, or the way hair and fabric falls.
 </div>
 <hr />
 <video controls>
@@ -135,19 +136,19 @@ Sintel is a short computer-animated film that simulated, say, the fire and smoke
 </video>
 
 <div class="notes">
-<p>or the fire breath of this dragon.</p>
+<p>Or the fire breath of this dragon.</p>
 In traditional animation, every part of these scenes would be drawn by hand. The animators would, in a sense, simulate fire in their heads and transcribe it, frame-by-frame. It allows a lot of artistic control over the final result, but only with extensive effort put in.
 </div>
 <hr />
 <div class="notes">
-If you want to see what kind of techniques are coming on the horizon, a good place to look is SIGGRAPH. This is an annual conference on computer graphics, where researchers discuss new techniques for making computer graphics faster and more attractive. It’s not strictly about art or simulation, but a lot of it appears.
+If you want to see what kind of techniques are coming on the horizon, a good place to look is <a href="http://www.siggraph.org/">SIGGRAPH</a>. This is an annual conference on computer graphics, where researchers discuss new techniques for making computer graphics faster and more attractive. It’s not strictly about art or simulation, but a lot of it appears.
 </div>
 <hr />
 <div class="figure">
 <img src="content/hair.png" />
 </div>
 <div class="notes">
-Like this work. These researchers developed a method to read in a hairstyle, like from photographs, and work out the underlying parameters to allow its motion to be simulated believably. So you could have an actor converted to a model for a particular scene and have hair that still behaves properly. Admittedly, this image is kind of creepy and not very artistic, but it was made by researchers, not artists themselves.
+Like <a href="http://dx.doi.org/10.1145/2508363.2508398">this work</a>. These researchers developed a method to read in a hairstyle, like from photographs, and work out the underlying parameters to allow its motion to be simulated believably. So you could have an actor converted to a model for a particular scene and have hair that still behaves properly. Admittedly, this image is kind of creepy and not very artistic, but it was made by researchers, not artists themselves.
 </div>
 <hr />
 <video controls>
@@ -155,7 +156,7 @@ Like this work. These researchers developed a method to read in a hairstyle, lik
 </video>
 
 <div class="notes">
-More entertaining are water simulations, like these large-scale splashing liquids (really, that’s the title of the paper).
+More entertaining are water simulations, like <a href="http://sealab.cs.utah.edu/Papers/Gerszewski-2013-PAO/">these large-scale splashing liquids</a> (really, that’s the title of the paper).
 </div>
 <hr />
 <video controls>
@@ -163,7 +164,7 @@ More entertaining are water simulations, like these large-scale splashing liquid
 </video>
 
 <div class="notes">
-<p>And these small-scale surface tension simulations.</p>
+<p>And <a href="http://cg.informatik.uni-freiburg.de/publications/siggraphasia2013/2013_SIGGRAPHASIA_surface_tension_adhesion.pdf">these small-scale surface tension simulations</a> (<a href="http://cg.informatik.uni-freiburg.de/movies/siggraphasia2013/sigasia13_video.mp4">video</a>).</p>
 Interesting fact: these water simulations build on smoothed particle hydrodynamics, the same method used in the galaxy simulation earlier.
 </div>
 <hr />
@@ -177,7 +178,7 @@ The point is that all these highly detailed animations can be created quickly an
 
 <div class="notes">
 <p>Another potential application we’re starting to see now is in historical preservation. These gliders were used in the D-Day invasion in WWII. They were designed to be cheap and disposable, landing in unprepared fields behind enemy lines and abandoned so its crew could capture bridges and stuff. Only about 20 of these still exist.</p>
-But some people reconstructed one digitally, combining the old construction drawings with 3D scans of one of the few remaining gliders. And then, here’s the simulation part, they used their model to simulate the dangerous landings that their pilots had to do. Think about that: they took something experienced by maybe a few hundred people over 70 years ago, and made it possible for us, and everyone after us, to experience the same thing.
+But <a href="http://www.3ds.com/dday">some people reconstructed one digitally</a>, combining the old construction drawings with 3D scans of one of the few remaining gliders. And then, here’s the simulation part, they used their model to create interactive simulations of the dangerous landings that their pilots had to do. Think about that: they took something experienced by maybe a few hundred people over 70 years ago, and made it possible for us, and everyone after us, to experience the same thing.
 </div>
 <hr />
 <video controls>
@@ -185,7 +186,7 @@ But some people reconstructed one digitally, combining the old construction draw
 </video>
 
 <div class="notes">
-Closer to the present, consider our cars. As models age, they get harder to find. Even some current models will never be available to the likes of us. And in the future, gasoline engines may disappear entirely. But games like Gran Turismo are already preserving those experiences, even if that’s not their main goal. The future will always be able to access those experiences through simulation, whether those experiences involve the super-high-end cars shown here, or the Ford Focus that someone’s grandparents had. As long as these games stay playable, these experiences can be had. (see http://www.playthepast.org/?p=4938)
+Closer to the present, consider our cars. As models age, they get harder to find. Even some current models will never be available to the likes of us. And in the future, gasoline engines may disappear entirely. But games like <a href="https://www.youtube.com/watch?v=VbsZaa0ZZzA">Gran Turismo</a> are <a href="http://www.playthepast.org/?p=4938">already preserving those experiences</a>, even if that’s not their main goal. The future will always be able to access those experiences through simulation, whether those experiences involve the super-high-end cars shown here, or the Ford Focus that someone’s grandparents had. As long as these games stay playable, these experiences can be had.
 </div>
 <hr />
 <video controls>
@@ -194,7 +195,7 @@ Closer to the present, consider our cars. As models age, they get harder to find
 
 <div class="notes">
 <p>Another neat thing currently in progress: brain simulation.</p>
-<p>An important project in brain modelling is the OpenWorm. This includes a complete simulation of a nematode worm, a tiny, simple, and very well-studied animal. It has under 1000 cells, including just 302 neurons. So OpenWorm is creating a complete cell-level model of this worm, allowing for complete simulation of the worm and how it interacts with its environment. It’s still in development, but once complete could act as the base for simulations of larger animals, progressing eventually to humans. (see http://www.openworm.org)</p>
+<p>An important project in brain modelling is the <a href="http://www.openworm.org/">OpenWorm</a> (<a href="https://www.youtube.com/watch?v=r00FkkGFfrg">video</a>). This includes a complete simulation of a nematode worm, a tiny, simple, and very well-studied animal. It has under 1000 cells, including just 302 neurons. So OpenWorm is creating a complete cell-level model of this worm, allowing for complete simulation of the worm and how it interacts with its environment. It’s still in development, but once complete could act as the base for simulations of larger animals, progressing eventually to humans.</p>
 Interesting fact: the muscle movements work on smoothed particle hydrodynamics, same as those water simulations earlier and the galaxy simulation before that. It surprised me how versatile this method is.
 </div>
 <hr />
@@ -203,12 +204,12 @@ Interesting fact: the muscle movements work on smoothed particle hydrodynamics, 
 </video>
 
 <div class="notes">
-<p>There is already some work on simulated human brains. Spaun, from the University of Waterloo, has 2.5 million neurons and is attached to simple visual input and a single simulated arm that it can control. It’s still a far, far cry from the 85 billion neurons in a full human brain (34,000 times larger!), but it can already perform some simple human-like tasks, and shows human-like limitations, like how many numbers it can memorize at once.</p>
+<p>There is already some work on simulated human brains. <a href="http://nengo.ca/build-a-brain/spaunvideos">Spaun</a>, from the University of Waterloo, has 2.5 million neurons and is attached to simple visual input and a single simulated arm that it can control. It’s still a far, far cry from the 85 billion neurons in a full human brain (34,000 times larger!), but it can already perform some simple human-like tasks, and shows human-like limitations, like how many numbers it can memorize at once.</p>
 But the gap to full human brain simulation is very large. I don’t know when it will be possible, but I have no doubt that it will be. If our brain simulation capacity matches Moore’s law, it could be just 30 years off, before 2050. I’m not convinced it’ll actually be that quick, but the point is that it’s not impossibly far either.
 </div>
 <hr />
 <div class="notes">
-<p>And now we’re getting into the idea of a fully simulated human mind, one that can think and feel, indistinguishable from how we do. And if we can eventually simulate one human, then maybe we could one day we could simulate more – even, say, a whole planet-full of them. And then we have to ask: is that happening to us right now? Not just like The Matrix, with real people in a simulation, but simulated people in a simulation. It’s been argued that, assuming we will be capable of such simulations, and assuming we have interest in performing them, there will actually be more simulated people than real ones, meaning we have a better than even chance of all being simulations right now. (see http://www.simulation-argument.com/simulation.html)</p>
+<p>And now we’re getting into the idea of a fully simulated human mind, one that can think and feel, indistinguishable from how we do. And if we can eventually simulate one human, then maybe we could one day we could simulate more – even, say, a whole planet-full of them. And then we have to ask: is that happening to us right now? Not just like The Matrix, with real people in a simulation, but simulated people in a simulation. <a href="http://www.simulation-argument.com/simulation.html">It’s been argued</a> that, assuming we will be capable of such simulations, and assuming we have interest in performing them, there will actually be more simulated people than real ones, meaning we have a better than even chance of all being simulations right now.</p>
 <p>Being humans, all of us deserve human rights (like not being unexpectedly killed), and we could be simulations, so don’t human simulations also deserve human rights (like not being unexpectedly shut off)? And if they do, then simulated minds similar to humans must have rights too. Then at what level of simulation complexity is required for personhood? If you play The Sims and burn them alive, you don’t get arrested for murder. If you imagine a person in horrible pain, that’s a simulation running in your head, but it’s not considered torture. But if you have a fully accurate human brain simulation and subject it to pain, how is that different from doing the same to real human?</p>
 <p>But I’m not here to delve into philosophy. Back to the future of simulation:</p>
 <p>Or rather, let’s take a moment to talk about what the future doesn’t hold. What are the limits of simulation?</p>
@@ -229,7 +230,7 @@ And that’s everything I have to tell you today. I hope I’ve convinced you of
 </video>
 
 <div class="notes">
-And just for fun, here’s a beautiful looking universe scale simulation.
+And just for fun, here’s a beautiful looking <a href="http://www.illustris-project.org/">universe scale simulation</a>.
 </div>
 </body>
 </html>
