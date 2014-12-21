@@ -30,8 +30,6 @@ webpage: $(INPUT)
 	$(PANDOC) -t html\
 	          --smart\
 	          --standalone\
-	          --bibliography=content/sources.bib\
-	          --csl=content/ieee.csl\
 	          -o $(WEBPAGE) $(INPUT)
 
 clean:
